@@ -1,29 +1,104 @@
+/* Enhanced Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e278cb;
+    background-color: #f5f5fa;
     color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #b77fe6;
-    box-shadow: 0 4px 8px rgba(224, 109, 190, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
-    color: #b92093;
-}
-
-.about {
-    margin-top: 20px;
+    color: #7027A0;
+    font-weight: 700;
+    text-align: center;
 }
 
 .role {
     font-style: italic;
     color: #b354df;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about p {
+    margin: 10px 0;
+}
+
+.about a {
+    color: #7027A0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.about a:hover {
+    color: #b92093;
+    text-decoration: underline;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8ff;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.projects li:hover {
+    background-color: #e3d3f8;
+    transform: translateY(-5px);
+}
+
+.projects a {
+    color: #7027A0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.projects a:hover {
+    color: #b92093;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .about, .projects {
+        text-align: left;
+    }
 }
