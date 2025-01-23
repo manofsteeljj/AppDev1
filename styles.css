@@ -1,4 +1,4 @@
-/* Enhanced Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -87,7 +87,7 @@ h1, h2 {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     .container {
         margin: 20px;
